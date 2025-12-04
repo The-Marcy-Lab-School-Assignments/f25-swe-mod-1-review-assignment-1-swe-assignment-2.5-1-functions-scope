@@ -1,4 +1,4 @@
-# swe-assignment-2.5-1-functions-scope
+# Functions and Scope, String and Array Manipulation
 
 - [Reminders](#reminders)
   - [Asking ChatGPT for Help](#asking-chatgpt-for-help)

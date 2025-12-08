@@ -15,15 +15,3 @@ const findMissingStudent = (yesterday, today) => {
     return ""
   }
 }
-
-console.log(findMissingStudent(
-  ["Maya", "Reuben", "Sarah", "James"],
-  ["Maya", "Sarah", "James"]
-));
-// "Reuben"
-
-console.log(findMissingStudent(
-  ["Alex", "Jordan"],
-  ["Jordan", "Alex"]
-));
-// "" (no one missing)

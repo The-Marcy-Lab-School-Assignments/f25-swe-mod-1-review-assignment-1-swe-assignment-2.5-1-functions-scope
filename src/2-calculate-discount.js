@@ -5,14 +5,16 @@ Analyze the following code. Identify the bug and fix it. Then, below, explain wh
 
 */
 const calculateDiscount = (price) => {
+  let discountRate;
+
   if (price > 100) {
-    const discountRate = 0.1;
+    discountRate = 0.1;
   } else {
-    const discountRate = 0.05;
+    discountRate = 0.05;
   }
 
-  const discount = price * discountRate;
+  discount = price * discountRate;
   return price - discount;
-}
+};
 
 console.log(calculateDiscount(150)); // This should print 135

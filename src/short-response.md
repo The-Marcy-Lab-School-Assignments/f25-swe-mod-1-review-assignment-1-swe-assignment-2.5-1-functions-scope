@@ -68,6 +68,7 @@ console.log(userProfile); // reuben ogbonna (RO) - Age: 24
 
 1. A diagram of the callstack showing all functions currently executing (most recent calls at the top)
 2. All variables in each scope with their current values
+   - Use `function` for variables holding functions
    - Use `waiting` for variables waiting to receive a value from a function call
    - Use `undefined` for variables not yet assigned a value
 

@@ -28,7 +28,7 @@ In your response, make sure to cover the following details:
 
 ### Response 1
 
-Your response...
+A **function** call is an "expression that resolves/evaluates to a value," because an **expression** is a method that gives a result based on the input given. When **invoked**, the value that is returned is determined by the expression and **variable** input. For example, the function takes the inputted number value and doubles said value. However, some functions, when invoked, will return undefined because some expressions will either change or be **modified**. 
 
 ---
 
@@ -76,40 +76,40 @@ console.log(userProfile); // reuben ogbonna (RO) - Age: 24
 ```
 Callstack: (recent calls at the top)
 ---------------------------
-[           ]
-[           ]
-[           ]
-[           ]
+[userProfile]
+[createFullName]
+[extractInitials]
+[getFirstLetter]
 
 
 Variables by Scope:
 ---------------------------
 Global Scope:
-- buildProfile = ?
-- createFullName = ?
-- extractInitials = ?
-- getFirstLetter = ?
-- userProfile = ?
+- buildProfile = firstName, lastName, age
+- createFullName = firstName, lastName
+- extractInitials = firstName, lastName
+- getFirstLetter = name
+- userProfile = firstName, lastName, age
 
 buildProfile() scope:
-- firstName = ?
-- lastName = ?
-- age = ?
-- fullName = ?
-- initials = ?
-- bio = ?
+- firstName = waiting
+- lastName = waiting
+- age = waiting
+- fullName = undefined
+- initials = undefined
+- bio = undefined
 
 createFullName() scope:
-- (list any parameters/variables)
+- (first, last)
 
 extractInitials() scope:
-- first = ?
-- last = ?
-- firstInitial = ?
-- lastInitial = ?
+- first = waiting
+- last = waiting
+- firstInitial = undefined
+- lastInitial = undefined
 
 getFirstLetter() scope:
-- name = ?
+- name = waiting
 ```
 
 ---
@@ -147,7 +147,7 @@ console.log(count);
 
 ### Response 3
 
-Your response...
+The two code snippets behave differently because of **data priority**. In example A, the function `incrementA()` increases the **count** by 1 when invoked. In example B, the function `incrementB()` is invoked increases the count within the function by 1; the reason why it that a function takes the **variable** the most closest to its **scope**, which is the variable in the function and not the one outside of the function.  
 
 ---
 
@@ -173,7 +173,7 @@ Which approach would you choose and why? In your answer, identify at least one p
 
 ### Response 4
 
-Your response...
+I believe the best approach is A because the code is **easy to use**, the method `indexOf()` gives me the placement of the student I want to remove, and `splice()` allows me to remove a student by inputting the **index** of the student's position. The only problem, however, is if I input a **name** that isn’t in the list of students, the index value would be **-1**, causing the `splice()` method would go in **reverse**, removing a different student.
 
 ---
 
@@ -183,9 +183,9 @@ Label the basic array methods below with a 1-sentence description of what they d
 
 ### Response 5
 
-- `push(value)` - ???
-- `pop()` - ???
-- `shift()` - ???
-- `unshift(value)` - ???
-- `splice(index, deleteCount)` - ???
-- `slice(start, end)` - ???
+- `push(value)` - The method mutates an array by **placing** a value at the end of the array.
+- `pop()` - The method mutates an array by **removing** the **last** value of the array.
+- `shift()` - The method mutates an array by removing the **first** value of the array.
+- `unshift(value)` - The method mutates an array by **adding** the first value of an array.
+- `splice(index, deleteCount)` - The method mutates an array by either **removing, replacing, or adding** a value based on the **starting index** and **delete count**.
+- `slice(start, end)` - The method does not mutate an array. It makes a **new array** by taking values from a **start** index and an **end** index.

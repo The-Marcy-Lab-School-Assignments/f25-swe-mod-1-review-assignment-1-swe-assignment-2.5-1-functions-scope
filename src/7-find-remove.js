@@ -6,7 +6,9 @@ Analyze the following code. Explain what happens when the function is called. Th
 */
 const findAndRemove = (arr, target) => {
   const index = arr.indexOf(target);
-  arr.splice(index, 1);
+  if (index !== -1) {
+    arr.splice(index, 1);
+  };
   return arr;
 }
 
